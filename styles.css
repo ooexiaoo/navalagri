@@ -586,14 +586,16 @@ body {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
     gap: 20px;
 }
 
@@ -669,7 +671,8 @@ body {
 
 .contact-map {
     grid-column: 1 / -1;
-    height: 400px;
+    height: 500px;
+    width: 90vw;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
